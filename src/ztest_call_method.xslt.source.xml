@@ -1,0 +1,13 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <tt:root name="A"/>
+  <tt:variable name="result"/>
+  <tt:template>
+    <tt:call-method class="ZCL_TEST_CALLBACK" s-name="CALLBACK">
+      <tt:with-parameter name="RESULT" var="result"/>
+    </tt:call-method>
+    <root>
+      <tt:write var="result"/>
+    </root>
+  </tt:template>
+</tt:transform>
